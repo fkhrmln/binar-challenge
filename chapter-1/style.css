@@ -1,5 +1,11 @@
+@font-face {
+  font-family: Helvetica, sans-serif;
+  src: url(./assets/fonts/Helvetica.ttf);
+}
+
 body {
   overflow-x: hidden;
+  font-family: Helvetica !important;
 }
 
 .header {
