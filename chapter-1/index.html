@@ -15,77 +15,57 @@
 
   <!-- header - start -->
 
-  <div class="header">
-    <div class="custom-nav d-flex justify-content-between align-items-center mx-md-5 pt-2 pb-3 py-md-3">
-      <div>
+  <div id="header">
+    <div class="navbar bg-transparent fixed-top navbar-expand-md py-4 px-md-5">
+      <div class="container-fluid">
         <a href="#header">
-          <div class="custom-nav__logo mx-md-auto"></div>
+          <div class="nav__logo mx-md-auto"></div>
         </a>
-      </div>
-      <div class="custom-nav__hamburger text-end text-md-center">
-        <button type="button" class="btn btn-link d-md-none p-0" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvas-right">
+        <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas-navbar">
           <i class="bi bi-list"></i>
         </button>
-        <div id="offcanvas-right" tabindex="-1" class="offcanvas offcanvas-end w-50" data-bs-scroll="true"
-          data-bs-backdrop="static">
-          <div class="offcanvas-header d-flex align-items-center py-0">
-            <h1 id="offcanvas-right-label" class="offcanvas-title fw-bold fs-5">BCR</h1>
-            <button type="button" class="btn btn-link p-0" data-bs-dismiss="offcanvas" aria-label="close">
-              <i class="bi bi-x fw-bold"></i>
+        <div id="offcanvas-navbar" class="offcanvas offcanvas-end w-50" tabindex="-1" data-bs-scroll="true">
+          <div class="offcanvas-header">
+            <a href="#header" class="offcanvas-title">
+              <h5>BCR</h5>
+            </a>
+            <button type="button" class="border-0 bg-transparent p-0" data-bs-dismiss="offcanvas">
+              <i class="bi bi-x"></i>
             </button>
           </div>
           <div class="offcanvas-body py-0">
-            <ul class="d-flex flex-column row-gap-3 align-items-start">
-              <li>
-                <a href="#our-services" data-bs-dismiss="offcanvas">Our Services</a>
+            <ul class="navbar-nav justify-content-end flex-grow-1 column-gap-md-3 row-gap-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#our-services">Our Services</a>
               </li>
-              <li>
-                <a href="#why-us">Why Us</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#why-us">Why Us</a>
               </li>
-              <li>
-                <a href="#testimonial">Testimonial</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimony</a>
               </li>
-              <li>
-                <a href="#faq">FAQ</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
               </li>
-              <li>
+              <li class="nav-item d-flex d-md-block">
                 <button type="button">
-                  <a href="#">Register</a>
+                  Register
                 </button>
               </li>
             </ul>
           </div>
         </div>
-        <ul class="d-none d-md-flex justify-content-center align-items-center column-gap-4 list-unstyled">
-          <li>
-            <a href="#our-services">Our Services</a>
-          </li>
-          <li>
-            <a href="#why-us">Why Us</a>
-          </li>
-          <li>
-            <a href="#testimonial">Testimonial</a>
-          </li>
-          <li>
-            <a href="#faq">FAQ</a>
-          </li>
-          <li>
-            <button type="button">
-              <a href="#">Register</a>
-            </button>
-          </li>
-        </ul>
       </div>
     </div>
-    <div id="header" class="row flex-column flex-md-row justify-content-md-between align-items-center row-gap-3">
+    <div class="header row flex-column flex-md-row justify-content-md-between align-items-center row-gap-3">
       <div class="row justify-content-center align-items-center p-0 col">
         <div class="row flex-column row-gap-1 justify-content-center align-items-center col col-md-10">
           <h1 class="header__heading col">Sewa & Rental Mobil Terbaik di kawasan Bekasi</h1>
           <p class="header__paragraph col">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik
             dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
           <div class="col">
-            <button class="header__button">Mulai Sewa Mobil</button>
+            <button type="button" class="header__button">Mulai Sewa Mobil</button>
           </div>
         </div>
       </div>

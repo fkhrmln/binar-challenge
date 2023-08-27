@@ -4,13 +4,16 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: Helvetica !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .header {
   color: black;
   background-color: #f1f3ff;
+  padding-top: 85px;
 }
 
 .header .header__heading {
@@ -19,14 +22,14 @@ body {
   line-height: 54px;
 }
 
-.hedaer .header__paragraph {
+.header .header__paragraph {
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
 }
 
 .header .header__button,
-.custom-nav ul li button,
+.offcanvas-body ul li button,
 .custom-box__button {
   background-color: #5cb85f;
   border-radius: 2px;
@@ -60,23 +63,18 @@ body {
   line-height: 20px;
 }
 
-.custom-nav {
-  padding: 0 12px;
-}
-
-.custom-nav__logo {
+.nav__logo {
   background-color: #0d28a6;
   width: 100px;
   height: 34px;
 }
 
-.custom-nav__hamburger i,
-.offcanvas-header i {
-  color: #222222;
-  font-size: 34px;
+.offcanvas-header button i,
+.navbar-toggler i {
+  color: #222222 !important;
+  font-size: 2rem;
 }
 
-.custom-nav__hamburger ul,
 .offcanvas-body ul,
 .footer__nav ul,
 .footer__contact ul {
@@ -85,7 +83,7 @@ body {
   padding-inline-start: 0;
 }
 
-.custom-nav__hamburger ul li a,
+.offcanvas-header a,
 .offcanvas-body ul li a,
 .carousel__author,
 .footer__nav ul li a {
@@ -96,7 +94,7 @@ body {
   line-height: 20px;
 }
 
-.custom-nav ul li button a:last-child {
+.offcanvas-body ul li button a {
   color: white;
   font-size: 14px;
   font-weight: 700;
