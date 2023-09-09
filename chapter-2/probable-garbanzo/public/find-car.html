@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Car</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- header - start -->
+
+  <div id="header">
+    <div class="navbar bg-transparent fixed-top navbar-expand-md py-4 px-md-5">
+      <div class="container-fluid">
+        <a href="#header">
+          <div class="nav__logo mx-md-auto"></div>
+        </a>
+        <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas-navbar">
+          <i class="bi bi-list"></i>
+        </button>
+        <div id="offcanvas-navbar" class="offcanvas offcanvas-end w-50" tabindex="-1" data-bs-scroll="true">
+          <div class="offcanvas-header">
+            <a href="#header" class="offcanvas-title">
+              <h5>BCR</h5>
+            </a>
+            <button type="button" class="border-0 bg-transparent p-0" data-bs-dismiss="offcanvas">
+              <i class="bi bi-x"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body py-0">
+            <ul class="navbar-nav justify-content-end flex-grow-1 column-gap-md-3 row-gap-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#our-services">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#why-us">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimony</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item d-flex d-md-block">
+                <button type="button">
+                  Register
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header row flex-column flex-md-row justify-content-md-between align-items-center row-gap-3">
+      <div class="row justify-content-center align-items-center p-0 col">
+        <div class="row flex-column row-gap-1 justify-content-center align-items-center col col-md-10">
+          <h1 class="header__heading col">Sewa & Rental Mobil Terbaik di kawasan Bekasi</h1>
+          <p class="header__paragraph col">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik
+            dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+        </div>
+      </div>
+      <div class="col ps-4 ps-md-0">
+        <img src="./assets/images/img_car.png" alt="Car" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- header - end -->
+
+  <!-- search - start -->
+
+  <div class="search mx-auto d-flex flex-column row-gap-5 container">
+    <form class="shadow-sm py-4 px-4 d-flex justify-content-between column-gap-3 bg-white">
+      <div class="search__filter d-flex flex-column row-gap-1">
+        <label for="tipe-driver">Tipe Driver</label>
+        <select id="tipe-driver" name="tipe-driver">
+          <option selected value="">Pilih Tipe Supir</option>
+          <option value="dengan-supir">Dengan Supir</option>
+          <option value="tanpa-supir">Tanpa Supir (Lepas Kunci)</option>
+        </select>
+      </div>
+      <div class="search__filter d-flex flex-column row-gap-1">
+        <label for="tanggal">Pilih Tanggal</label>
+        <input type="date" id="tanggal">
+      </div>
+      <div class="search__filter d-flex flex-column row-gap-1">
+        <label for="waktu-jemput">Waktu Jemput/Ambil</label>
+        <select id="waktu-jemput" name="waktu-jemput">
+          <option selected value="">Pilih Waktu</option>
+          <option value="08:00">08.00 WIB</option>
+          <option value="09:00">09.00 WIB</option>
+          <option value="10:00">10.00 WIB</option>
+          <option value="11:00">11.00 WIB</option>
+          <option value="12:00">12.00 WIB</option>
+        </select>
+      </div>
+      <div class="search__filter d-flex flex-column row-gap-1 position-relative">
+        <label>Jumlah Penumpang (optional)</label>
+        <input type="text" id="jumlah-penumpang" placeholder="Jumlah Penumpang">
+        <div class="user-icon position-absolute">
+          <img src="./assets/images/fi_users.svg" alt="User">
+        </div>
+      </div>
+      <div class="search__filter d-flex flex-column row-gap-1">
+        <label class="opacity-0">Hehehe</label>
+        <button type="button" id="load-btn" class="search__button">Cari Mobil</button>
+      </div>
+    </form>
+    <div id="cars-container" class="result"></div>
+  </div>
+
+  <!-- search - end -->
+
+  <!-- footer - start -->
+
+  <div class="footer container">
+    <div class="d-flex flex-column row-gap-3 py-5 flex-md-row justify-content-between">
+      <div class="footer__address d-flex flex-column row-gap-3">
+        <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+        <p>binarcarrental@gmail.com</p>
+        <p>081-233-334-808</p>
+      </div>
+      <div class="footer__nav">
+        <ul class="d-flex flex-column row-gap-3">
+          <li><a href="#our-services">Our Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#testimonial">Testimonial</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact d-flex flex-column row-gap-3">
+        <p>Connect with us</p>
+        <ul class="d-flex column-gap-3">
+          <li><img src="./assets/images/icon_facebook.svg" alt="Facebook"></li>
+          <li><img src="./assets/images/icon_instagram.svg" alt="Instagram"></li>
+          <li><img src="./assets/images/icon_twitter.svg" alt="Twitter"></li>
+          <li><img src="./assets/images/icon_mail.svg" alt="Mail"></li>
+          <li><img src="./assets/images/icon_twitch.svg" alt="Twitch"></li>
+        </ul>
+      </div>
+      <div class="footer__copyright d-flex flex-column row-gap-3">
+        <p>Copyright Binar 2022</p>
+        <div class="custom-nav__logo"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer - end -->
+
+  <script type="text/javascript" src="./scripts/app.js"></script>
+  <script type="text/javascript" src="./scripts/binar.js"></script>
+  <script type="text/javascript" src="./scripts/car.js"></script>
+  <script type="text/javascript" src="./scripts/main.js"></script>
+</body>
+
+</html>
