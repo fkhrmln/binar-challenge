@@ -1,10 +1,10 @@
 import express from 'express';
-import { createNewCar, deleteCarById, getCarById, getCars, updateCarById } from '../controllers/CarsController.js';
+import { carController } from '../controllers/CarController.js';
 
 export const carsRouter = express.Router();
 
-carsRouter.get('/', getCars);
-carsRouter.post('/', createNewCar);
-carsRouter.get('/:id', getCarById);
-carsRouter.put('/:id', updateCarById);
-carsRouter.delete('/:id', deleteCarById);
+carsRouter.get('/', carController.getCars);
+carsRouter.post('/', carController.createNewCar);
+carsRouter.get('/:id', carController.getCarById);
+carsRouter.put('/:id', carController.updateCarById);
+carsRouter.delete('/:id', carController.deleteById);
