@@ -30,7 +30,23 @@ class CarService {
   createNewCar = (car) => {
     const id = uuidv4();
 
-    const newCar = new Car(id, ...Object.values(car));
+    const newCar = new Car(
+      id,
+      car.plate || null,
+      car.manufacture || null,
+      car.model || null,
+      car.image || null,
+      car.rentPerDay || null,
+      car.capacity || null,
+      car.description || null,
+      car.availableAt || null,
+      car.transmission || null,
+      car.available || null,
+      car.type || null,
+      car.year || null,
+      car.options || null,
+      car.specs || null
+    );
 
     this.cars.push(newCar);
 
