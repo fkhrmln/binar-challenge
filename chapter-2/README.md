@@ -1,4 +1,4 @@
-# Chapter 1
+# Chapter 2
 
 Create a Binar Car Rental web page by manipulating the DOM to make the web interactive and create sorting and filtering logic using JavaScript.
 

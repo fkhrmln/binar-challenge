@@ -1,4 +1,4 @@
-# Chapter 1
+# Chapter 3
 
 Create a RESTful API with Express JS.
 
