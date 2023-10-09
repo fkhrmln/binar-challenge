@@ -232,4 +232,4 @@ This endpoint requires a car id as a request params and will delete the car obje
 
 ### ERD
 
-![ERD](./chapter-4/erd.png)
+![ERD](./erd.png)
