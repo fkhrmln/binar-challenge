@@ -229,3 +229,7 @@ This endpoint requires a car id as a request params and will delete the car obje
   "updatedAt": "2023-10-08T15:27:55.733Z"
 }
 ```
+
+### ERD
+
+![ERD](./chapter-4/erd.png)
