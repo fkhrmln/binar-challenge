@@ -84,6 +84,10 @@ npx sequelize-cli db:seed:all
 npm run start
 ```
 
+### ERD
+
+![ERD](./erd.png)
+
 ### API Documentation
 
 #### GET /
@@ -229,7 +233,3 @@ This endpoint requires a car id as a request params and will delete the car obje
   "updatedAt": "2023-10-08T15:27:55.733Z"
 }
 ```
-
-### ERD
-
-![ERD](./erd.png)
