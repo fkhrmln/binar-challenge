@@ -10,7 +10,7 @@ module.exports = {
         id: uuidv4(),
         name: 'Toyota Avanza',
         type: 'small',
-        image: './avanza.png',
+        image: './1697979369531.jpeg',
         capacity: 2,
         rentPerDay: 1000000,
         description:

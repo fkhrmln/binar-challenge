@@ -1,6 +1,6 @@
-# Chapter 4
+# Chapter 5
 
-Create a RESTful API with Express JS, PostgreSQL and JWT Authentication
+Create a RESTful API with Express PostgreSQL and JWT Authentication
 
 ## Getting Started
 
