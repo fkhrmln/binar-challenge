@@ -16,7 +16,6 @@
     "eslint-test-fix": "eslint __tests__ --fix",
     "test": "jest",
     "test-coverage": "jest --coverage",
-    "build": "node -r dotenv/config bin/www"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
