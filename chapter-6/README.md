@@ -11,14 +11,12 @@ Create a Website Binar Car Rental using Next JS
 - Google Chrome
 - Node JS
 - NPM
--
 
 ### Dependencies
 
 - next v14.0.0
 - react v18.0.0
 - typescript v5.0.0
--
 
 ### Installing
 
